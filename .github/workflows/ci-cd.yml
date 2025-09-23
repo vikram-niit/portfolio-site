@@ -27,6 +27,7 @@ jobs:
         pip install -r app/requirements.txt
 
     - name: Run Tests
+      working-directory: github-actions-cicd-demo
       run: |
         pytest tests/
 
