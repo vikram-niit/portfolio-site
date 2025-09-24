@@ -20,6 +20,9 @@ jobs:
       with:
         python-version: '3.11'
 
+    - name: Set PYTHONPATH
+      run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+
     - name: Install Dependencies
       working-directory: github-actions-cicd-demo
       run: |
