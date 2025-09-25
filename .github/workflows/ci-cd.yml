@@ -43,8 +43,8 @@ jobs:
 
     - name: Tag and Push
       run: |
-        docker tag my-app:latest your-dockerhub-username/my-app:latest
-        docker push your-dockerhub-username/my-app:latest
+        docker tag my-app:latest ${{ secrets.DOCKER_USERNAME}}/my-app:latest
+        docker push ${{ secrets.DOCKER_USERNAME}}/my-app:latest
 
     - name: Deploy to AWS EC2
       uses: appleboy/ssh-action@v0.1.6
