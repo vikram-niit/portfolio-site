@@ -28,7 +28,6 @@ jobs:
 
     - name: Run Tests
       working-directory: github-actions-cicd-demo
-      cd github-actions-cicd-demo
       run: |
         pytest tests/
 
