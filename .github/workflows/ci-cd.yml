@@ -70,6 +70,7 @@ jobs:
     - name: Slack Notification via Webhook
       uses: Ilshidur/action-slack@master
       with:
-        webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-        msg: '✅ Deployment Successful!'
+        args: '✅ Deployment Successful!'
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
 
