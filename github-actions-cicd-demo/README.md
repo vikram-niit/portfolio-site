@@ -17,6 +17,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/<your-username>/flask-app-ci-cd.git
 cd flask-app-ci-cd
 pip install -r requirements.txt
+```
 
 ## ▶️ Run the app locally
        python app.py
@@ -42,3 +43,4 @@ On main branch merge:
 App is deployed (example: Docker Hub / AWS / Render)
 
 GitHub Actions workflow file: .github/workflows/ci-cd.yml
+
