@@ -68,7 +68,7 @@ jobs:
           docker run -d --name my-app -p 80:5000 ${{ secrets.DOCKER_USERNAME }}/my-app:latest
 
     - name: Slack Notification via Webhook
-      uses: Ilshidur/action-slack@v3
+      uses: Ilshidur/action-slack@master
       with:
         webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
         msg: '✅ Deployment Successful!'
