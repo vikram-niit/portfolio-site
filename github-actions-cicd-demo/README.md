@@ -25,22 +25,20 @@ pip install -r requirements.txt
 
 The app will run on http://127.0.0.1:5000.
 
-##🧪 Running tests
+## 🧪 Running tests
 	pytest
 
-##⚙️ CI/CD Pipeline
+## ⚙️ CI/CD Pipeline
 
-On every push:
+On every push/Manual Trigger:
 
-Code is checked out
-
-Dependencies are installed
-
-Tests are executed
+- Code is checked out
+- Dependencies are installed
+- Tests are executed
 
 On main branch merge:
-
-App is deployed (example: Docker Hub / AWS / Render)
+- App is deployed (example: Docker Hub / AWS / Render)
 
 GitHub Actions workflow file: .github/workflows/ci-cd.yml
+
 
