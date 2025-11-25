@@ -31,7 +31,10 @@ section {
 
 section img {
     max-width: 150px;
+    float: left;
+    margin-right: 15px;
 }
+
 
 .profile-images img {
     max-width: 120px;
@@ -82,3 +85,4 @@ footer {
         margin: 0.5rem 0;
     }
 }
+
