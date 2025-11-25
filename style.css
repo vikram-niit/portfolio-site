@@ -36,6 +36,19 @@ section img {
     margin-right: 15px;
 }
 
+/* Make the section expand around the floated image */
+#about {
+    display: flow-root;  
+}
+
+/* Image styles */
+#about img {
+    max-width: 150px;    /* increase if you want a bigger picture */
+    float: left;         /* image on the left */
+    margin-right: 15px;  /* space between image and text */
+    margin-bottom: 10px;
+    border-radius: 8px;  /* optional: looks nicer */
+}
 
 .profile-images img {
     max-width: 120px;
@@ -86,5 +99,6 @@ footer {
         margin: 0.5rem 0;
     }
 }
+
 
 
