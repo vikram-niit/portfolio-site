@@ -27,6 +27,7 @@ section {
     background: white;
     margin-bottom: 1rem;
     border-radius: 8px;
+    display: flow-root;
 }
 
 section img {
@@ -85,4 +86,5 @@ footer {
         margin: 0.5rem 0;
     }
 }
+
 
