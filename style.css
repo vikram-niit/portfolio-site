@@ -100,30 +100,28 @@ footer {
     }
 }
 
-/* Center the tagline */
-#tagline {
+/* Tagline container */
+.tagline {
     text-align: center;
-    margin: 80px 0;
+    margin: 30px 0;
 }
 
-/* Main headline */
-#tagline h1 {
-    font-size: 3rem;
+/* Headline styling */
+.tagline h1 {
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #ff4500; /* fiery orange */
+    color: #ff4500;
     letter-spacing: 2px;
     line-height: 1.5;
 }
 
-/* Each word spark animation */
+/* Spark/firecracker animation */
 .spark {
     display: inline-block;
     position: relative;
-    color: #ff4500;
     animation: spark 1.5s infinite;
 }
 
-/* Spark/firecracker effect */
 @keyframes spark {
     0% { text-shadow: 0 0 5px #fff700, 0 0 10px #ffdd00, 0 0 15px #ff4500; transform: scale(1); }
     25% { text-shadow: 0 0 10px #fff700, 0 0 20px #ffdd00, 0 0 30px #ff4500; transform: scale(1.1); }
@@ -132,11 +130,7 @@ footer {
     100% { text-shadow: 0 0 5px #fff700, 0 0 10px #ffdd00, 0 0 15px #ff4500; transform: scale(1); }
 }
 
-/* Optional: add hover sparkle */
-.spark:hover {
-    animation: spark 0.8s infinite;
-    color: #ffd700;
-}
+
 
 
 
