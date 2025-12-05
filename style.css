@@ -103,16 +103,21 @@ footer {
 /* Tagline container */
 .tagline {
     text-align: center;
-    margin: 30px 0;
+    margin: 10px auto;           /* reduced space above/below */
+    padding: 0;                  /* no extra padding */
 }
 
-/* Headline styling */
+/* Tagline text */
 .tagline h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ff4500;
-    letter-spacing: 2px;
-    line-height: 1.5;
+    font-size: 1.3rem;           /* smaller and less flashy */
+    font-weight: 600;            /* balanced weight */
+    color: #333;                 /* matches the rest of your UI */
+    background: #f8f8f8;         /* subtle card-like background */
+    display: inline-block;
+    padding: 6px 14px;           /* smaller padding */
+    border-radius: 6px;          /* matches your card design */
+    border: 1px solid #e0e0e0;   /* subtle border */
+    margin: 5px 0;               /* reduces spacing further */
 }
 
 
