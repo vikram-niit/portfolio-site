@@ -122,60 +122,86 @@ footer {
 
 /* Projects Section */
 #projects {
-    padding: 2rem;
-    max-width: 800px;
+    padding: 2.5rem 1rem;
+    max-width: 900px;
     margin: auto;
     background: white;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    font-family: Arial, sans-serif;
 }
 
 /* Section Title */
 #projects h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
-    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #222;
+    position: relative;
 }
 
-/* Category List (AI, ML, etc.) */
+/* Optional accent line under section title */
+#projects h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ff4500;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Category headers */
+#projects li > strong {
+    font-size: 1.25rem;
+    color: #333;
+    display: block;
+    margin: 25px 0 15px;
+    border-left: 4px solid #ff4500; /* subtle accent line */
+    padding-left: 12px;
+}
+
+/* Project list reset */
 #projects ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
-/* Category Title */
-#projects li > strong {
-    font-size: 1.2rem;
-    color: #222;
+/* Project cards */
+#projects li ul li a {
     display: block;
-    margin: 20px 0 10px;
-}
-
-/* Inner project list */
-#projects li ul {
-    padding-left: 0;
-}
-
-/* Project links styled as clean cards */
-#projects a {
-    display: block;
-    background: #f8f8f8;
-    padding: 12px 16px;
-    margin: 6px 0;
-    border-radius: 6px;
+    background: #fdfdfd;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border-radius: 8px;
     border: 1px solid #e0e0e0;
-    text-decoration: none;
     color: #333;
-    transition: all 0.2s ease;
-    font-size: 0.95rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* Hover effect */
-#projects a:hover {
-    background: #eee;
-    border-color: #ccc;
-    transform: translateY(-2px);
+/* Hover effect: lift + subtle accent */
+#projects li ul li a:hover {
+    background: #fff7f0;
+    border-color: #ff8c42;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 600px) {
+    #projects li > strong {
+        font-size: 1.1rem;
+    }
+
+    #projects li ul li a {
+        font-size: 0.95rem;
+        padding: 12px 16px;
+    }
 }
 
 
