@@ -115,20 +115,6 @@ footer {
     line-height: 1.5;
 }
 
-/* Spark/firecracker animation */
-.spark {
-    display: inline-block;
-    position: relative;
-    animation: spark 1.5s infinite;
-}
-
-@keyframes spark {
-    0% { text-shadow: 0 0 5px #fff700, 0 0 10px #ffdd00, 0 0 15px #ff4500; transform: scale(1); }
-    25% { text-shadow: 0 0 10px #fff700, 0 0 20px #ffdd00, 0 0 30px #ff4500; transform: scale(1.1); }
-    50% { text-shadow: 0 0 5px #fff700, 0 0 10px #ffdd00, 0 0 15px #ff4500; transform: scale(1); }
-    75% { text-shadow: 0 0 12px #fff700, 0 0 25px #ffdd00, 0 0 35px #ff4500; transform: scale(1.05); }
-    100% { text-shadow: 0 0 5px #fff700, 0 0 10px #ffdd00, 0 0 15px #ff4500; transform: scale(1); }
-}
 
 
 
