@@ -120,6 +120,64 @@ footer {
     margin: 5px 0;               /* reduces spacing further */
 }
 
+/* Projects Section */
+#projects {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Section Title */
+#projects h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Category List (AI, ML, etc.) */
+#projects ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Category Title */
+#projects li > strong {
+    font-size: 1.2rem;
+    color: #222;
+    display: block;
+    margin: 20px 0 10px;
+}
+
+/* Inner project list */
+#projects li ul {
+    padding-left: 0;
+}
+
+/* Project links styled as clean cards */
+#projects a {
+    display: block;
+    background: #f8f8f8;
+    padding: 12px 16px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+/* Hover effect */
+#projects a:hover {
+    background: #eee;
+    border-color: #ccc;
+    transform: translateY(-2px);
+}
+
 
 
 
