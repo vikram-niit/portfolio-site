@@ -18,6 +18,7 @@ header nav a {
     color: white;
     margin: 0 1rem;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 section {
@@ -36,9 +37,18 @@ section img {
     margin-right: 15px;
 }
 
+#home{
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5; 
+}
+
 /* Make the section expand around the floated image */
 #about {
-    display: flow-root;  
+    display: flow-root; 
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5; 
 }
 
 /* Image styles */
