@@ -120,92 +120,49 @@ footer {
     margin: 5px 0;               /* reduces spacing further */
 }
 
-/* Projects Section */
-#projects {
-    padding: 2.5rem 1rem;
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    margin-bottom: 2rem;
-    font-family: Arial, sans-serif;
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
 }
 
-/* Section Title - left aligned */
-#projects h2 {
-    text-align: left;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #222;
-    position: relative;
+.project-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Optional accent line under section title */
-#projects h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #ff4500;
-    margin: 6px 0 0 0; /* aligned to left */
-    border-radius: 2px;
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
 }
 
-/* Category headers */
-#projects li > strong {
-    font-size: 1.3rem;
-    color: #ff4500;        /* accent color to stand out */
-    display: block;
-    margin: 25px 0 12px;
-    border-left: 4px solid #ff4500; /* subtle accent line */
-    padding-left: 12px;
+.project-item h3 {
+  margin-top: 0;
 }
 
-/* Project list reset */
-#projects ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+/* projects list inside each category */
+.category-projects {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
-/* Project cards */
-#projects li ul li a {
-    display: block;
-    background: #fdfdfd;
-    padding: 14px 18px;
-    margin: 8px 0;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-    color: #333;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;               /* slightly bolder for standout */
-    transition: all 0.25s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+.category-projects li {
+  margin-bottom: 6px;
 }
 
-/* Hover effect: lift + subtle accent */
-#projects li ul li a:hover {
-    background: #fff7f0;
-    border-color: #ff8c42;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    transform: translateY(-3px);
+.category-projects a {
+  text-decoration: none;
+  color: #007bff;
 }
 
-/* Responsive adjustments for mobile */
-@media (max-width: 600px) {
-    #projects li > strong {
-        font-size: 1.15rem;
-    }
-
-    #projects li ul li a {
-        font-size: 0.95rem;
-        padding: 12px 16px;
-    }
+.category-projects a:hover {
+  text-decoration: underline;
 }
-
-
-
-
 
